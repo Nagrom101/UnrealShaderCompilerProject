@@ -11,6 +11,8 @@ System Shock 2023 setup :
 
 1 : Download UE4SS and install it into the system shock binaries folder ( where the exe is )
 
+i used the newest experimental version at time of writing **https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental-latest/UE4SS_v3.0.1-603-g07f4b8f.zip**
+
 You must set the version in UE4SS-settings.ini , for system shock it is as follows :
 
 [EngineVersionOverride]
