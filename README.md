@@ -22,8 +22,8 @@ MajorVersion = 4
 MinorVersion = 27
 
 2 : Unzip the SystemShock.zip into the main folder of the game, the folder stucture should end up like so :
-System Shock Remake\SystemShock\Content\Paks\LogicMods\ShaderCompliation.pak
+System Shock Remake\SystemShock\Content\Paks\LogicMods\ShaderCompilation.pak
 
-3 : while in game ( not the pause menu for now ) you can press f8 , or left bumper + right bumper + dpad down on a gamepad , to engage the shader compilation. the widget will take up the whole screen until complation is complete. (there is also a button to engage the shader compiler in the ue4ss GUI console )
+3 : while in game ( not the pause menu for now ) you can press f8 , or left bumper + right bumper + dpad down on a gamepad , to engage the shader compilation. the widget will take up the whole screen until compilation is complete. (there is also a button to engage the shader compiler in the ue4ss GUI console )
 
-shader complation is complete. you can now play the game
+shader compilation is complete. you can now play the game
