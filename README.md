@@ -1,22 +1,31 @@
 # Unreal Shader Compiler Project
 
-This is a unreal blueprint that can be loaded as a mod via ue4ss ( see compiled mods list ) , or incorporated into the game itself by a developer. 
+This is a series of mods and unreal projects to fix unreal shader compilation stuttering.
 
-It allows users to compile shaders for materials and Niagara effects in (almost every , pending ue4ss support ) packaged unreal game, or natively in their own games (ue4ss not required).
+Scroll to the bottom if you are just interested in the ready to use Mods!
 
+At its core, this is a set of unreal blueprints and assets that can be loaded as a mod via ue4ss ( see compiled mods list ) , or if the mod is not on the list the user can make one via the unreal project itself for each version of the engine, or incorporated into the game itself by a developer. 
 
+It allows users to compile shaders for materials and Niagara effects in (almost every , pending ue4ss support ) packaged unreal game, or natively in their own developed games (ue4ss not required).
 
 There are 6 parts to this project. The main blueprint, the customized forEachLoop , the MeshAndFx (mesh, skeleton, niagara system), the loading widget, the complete widget, and the VR loading screen texture.
+
 <img width="649" height="213" alt="content" src="https://github.com/user-attachments/assets/01403046-ad0b-4977-84dd-23d3ca362652" />
 
 The main blueprint is shown here ( Unreal 4.26 and 4.27 ) : 
+
 <img width="7720" height="1240" alt="ShaderGraph" src="https://github.com/user-attachments/assets/6bd356a9-b54b-4ba8-825d-2f899450e62e" />
-it waits for user input, then shows a UI widget or a VR loading screen. It gathers all materials and loads them one at a time onto a blank built in engine mesh and skeleton. It then moves onto Niagara Effects. It uses a slightly customized for each loop (ForeachLoopWithDelay) that takes a float and has a bool , so that it can wait for each load to be complete before moving onto the next one.
+it waits for user input, then shows a UI widget or a VR loading screen. It gathers all materials and loads them one at a time onto a blank built in engine mesh and skeleton. It then moves onto Niagara Effects. It uses a slightly customized for each loop (ForeachLoopWithDelay) that takes a float and has a bool , so that it can wait for each load to be complete before moving onto the next one. 
+
+<br>
+
+<br>
 
 
 
 <details>
-<summary>How to use this to make shader mods : </summary>
+<summary>
+  How to use this to make shader mods / setting up the project files in unreal : </summary>
 
 You must find out two things to make a shader mod: the version of unreal the game was built on and the name of the folder that contains the content folder
 
@@ -74,8 +83,11 @@ MinorVersion = 27
 
 </details>
 
+<br>
+<br>
+<br>
 
-COMPILED MODS :
+**COMPILED MODS :**
 
 <details>
 
@@ -169,3 +181,6 @@ coming very soon
 tetris
 
 </details>
+
+
+Liscense : Feel free to use this for whatever project, no strings attached. Learn from it, the less shader stutter in the world the better! 
